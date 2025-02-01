@@ -330,7 +330,7 @@ class TinyProg(object):
         self.meta = TinyMeta(self)
         if (self.meta.root is None or not len(self.meta.root)) \
             and adesto_flash and not use_AT25S_B_variant:
-            print("Can't find meta--attempting Adesto B patch")
+            # print("Can't find meta--attempting Adesto B patch")
             use_AT25S_B_variant = True
             self.security_page_bit_offset = 4
             self.meta = TinyMeta(self)
